@@ -3,7 +3,7 @@ import * as utils from '../js/utils';
 
 class VideoCaptureSelector {
     constructor(selector) {
-        this.videoCaptureUrl = "../snippets/video_capture_snippet.html";
+        this.videoCaptureUrl = "./snippets/video_capture_snippet.html";
         this.requestHandler = function (html) {
             utils.insertHtml(selector, html);
         };
@@ -99,7 +99,7 @@ class ErrorDisplayer {
     constructor(selector, message, status_code) {
         this.message = message;
         this.status_code = status_code
-        this.errorDisplayerURL = "../snippets/error_snippet.html";
+        this.errorDisplayerURL = "../error_snippet.html";
         this.requestHandler = function (html) {
             html = utils.insertProperty(html, "error_message", message);
             html = utils.insertProperty(html, "error_status", status_code.toString());
@@ -122,7 +122,7 @@ class ResultDisplayer {
     constructor(selector, image, score) {
         this.image = image;
         this.score = score;
-        this.resultDisplayer = "../snippets/score_result_snippet.html";
+        this.resultDisplayer = "./snippets/score_result_snippet.html";
         var width_bar = this.get_bar_width(score)
         var color_bar = this.get_color_bar(score)
         this.requestHandler = function (html) {

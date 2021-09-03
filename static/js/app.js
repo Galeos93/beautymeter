@@ -4,7 +4,7 @@ import * as utils from '../js/utils';
 import * as components from '../js/components';
 
 (function (global) {
-    var selfieCaptureOptionsUrl = "../snippets/capture_selection_snippet.html";
+    var selfieCaptureOptionsUrl = "./snippets/capture_selection_snippet.html";
     var dc = {};
     dc.VideoCaptureSelector = new components.VideoCaptureSelector("#main-content");
 
