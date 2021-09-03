@@ -1,0 +1,126 @@
+/********** Navbar **********/
+
+#navbar a{
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-family: 'Patua One', cursive;
+}
+
+/********** body **********/
+
+#body {
+    background-repeat: no-repeat;
+    background-image:
+        radial-gradient(
+        #39b6e1,
+        #3973E1
+        );
+    color: white;
+}
+
+/********** general **********/
+
+#lua-navbar-toggler:checked ~ .collapse {
+    display:block;
+}
+
+.nav a {
+    font-size: 1.3em;
+    }
+
+.navbar-brand {
+    font-size: 1.8em;
+}
+
+html, body {
+   height:100%;
+}
+
+#nav-list a:hover {
+    font-weight:bold;
+  }
+
+#main-content {
+    margin-top: 10%;
+}
+
+#main-content h1{
+    font-size: 3.5em;
+    font-family: 'Patua One', cursive;
+}
+
+#main-content p{
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border: 1px solid white;
+    margin-top: 1em;
+    opacity: 0.3;
+}
+
+
+/********** index **********/
+
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus {
+    background-color: #2163de !important;
+    border-color: #2163de;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #2952a1 !important;
+    border-color: #2952a1;
+}
+
+
+/********** Extra Large devices only **********/
+@media (min-width: 1200px) {
+  }
+  
+  /********** Large devices only **********/
+  @media (min-width: 992px) and (max-width: 1199px) {
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 991px) {
+
+  }
+  
+  /********** Small devices only **********/
+  @media (min-width: 576px) and (max-width: 767px)  {  
+    #main-content button{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+  }
+  
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+  @media (max-width: 575px) {
+  /**** navbar begin****/
+    .nav-link {
+        font-size: 0.8em
+    }
+    .navbar-brand {
+        font-size: 1.3em;
+        font-family: 'Patua One', cursive;
+    }
+    .navbar-toggler-icon{
+      height: 23px;
+      width: 23px;
+    }
+   /**** navbar end****/
+    #main-content h1{
+        font-size: 2.0em;
+        font-family: 'Patua One', cursive;
+    } 
+    #main-content p{
+        font-size: 1.1em;
+        font-family: 'Open Sans', sans-serif;
+    }
+  }

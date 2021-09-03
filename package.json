@@ -1,0 +1,40 @@
+{
+  "name": "beautymeter",
+  "version": "1.0.0",
+  "description": "Website that is able to predict your attractiveness",
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "compression-webpack-plugin": "^3.0.1",
+    "css-loader": "^3.2.0",
+    "gulp": "^4.0.2",
+    "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.4",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Galeos93/beautymeter.git"
+  },
+  "keywords": [
+    "bootstrap",
+    "beauty"
+  ],
+  "author": "Galeos93",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Galeos93/beautymeter/issues"
+  },
+  "homepage": "https://github.com/Galeos93/beautymeter#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  }
+}

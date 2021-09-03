@@ -1,0 +1,12 @@
+<div class="container justify-content-center align-self-center text-center">
+    <h1 id="app_title">Attention: a frontal and quality selfie is needed</h1>
+    <div class="col-sm-12 text-center">
+        <button class="text-center btn btn-primary option_button" onclick="dc.VideoCaptureSelector.render()">Take a
+            selfie &#129331</button>
+    </div>
+    <div class="col-sm-12 text-center">
+        <button id="upload_selfie_button" class="text-center btn btn-primary option_button"
+            onclick="dc.on_click_upload_selfie_button()">Upload a selfie &#128193</button>
+        <input hidden type="file" id="upload_selfie_form" accept="image/x-png,image/gif,image/jpeg" />
+    </div>
+</div>
