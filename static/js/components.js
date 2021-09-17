@@ -45,6 +45,10 @@ class VideoCaptureSelector {
         startVideo()
 
         video.addEventListener('loadedmetadata', () => {
+            if ((video.clientWidth / video.clientHeight) > 1.2) {
+                video.style.width = 'auto';
+                video.style.height = '100%';
+            }
             canvas.width = video.clientWidth;
             canvas.height = video.clientHeight;
             context.lineWidth = 4;
